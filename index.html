@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#050505" />
+
+<!-- ============ SEO ============ -->
+<title>Mohammad Rayhan — Frontend Developer & Creative Developer</title>
+<meta name="description" content="Mohammad Rayhan — Frontend Web Developer, UI Designer & Creative Developer from Bangladesh. Building world-class, high-performance, futuristic web experiences." />
+<meta name="keywords" content="Mohammad Rayhan, Frontend Developer, UI Designer, Creative Developer, Bangladesh, Web Developer, React, Next.js, JavaScript" />
+<meta name="author" content="Mohammad Rayhan" />
+<link rel="canonical" href="https://mohammadrayhan.dev/" />
+
+<!-- ============ Open Graph ============ -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Mohammad Rayhan — Frontend & Creative Developer" />
+<meta property="og:description" content="Building world-class, high-performance, futuristic web experiences from Bangladesh." />
+<meta property="og:url" content="https://mohammadrayhan.dev/" />
+<meta property="og:site_name" content="Mohammad Rayhan Portfolio" />
+
+<!-- ============ Twitter Card ============ -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Mohammad Rayhan — Frontend & Creative Developer" />
+<meta name="twitter:description" content="Building world-class, high-performance, futuristic web experiences." />
+
+<!-- ============ Structured Data ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mohammad Rayhan",
+  "jobTitle": "Frontend Web Developer",
+  "address": { "@type": "PostalAddress", "addressCountry": "Bangladesh" },
+  "knowsAbout": ["Frontend Development","UI Design","Creative Development","JavaScript","React","Next.js"],
+  "url": "https://mohammadrayhan.dev/"
+}
+</script>
+
+<!-- ============ Favicon (inline SVG) ============ -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23050505'/><text x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' fill='%23ffffff' text-anchor='middle'>R</text><circle cx='74' cy='30' r='8' fill='%23ff6a1a'/></svg>" />
+
+<!-- ============ Fonts ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- ================= CURSOR SPOTLIGHT ================= -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ================= PRELOADER ================= -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <span class="preloader__text">MOHAMMAD RAYHAN</span>
+    <div class="preloader__bar"><span id="preBar"></span></div>
+  </div>
+</div>
+
+<!-- ================= SCROLL PROGRESS ================= -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__logo" aria-label="Mohammad Rayhan home">
+    <span class="nav__logo-mark">R</span>
+    <span class="nav__logo-text">Rayhan<i>.</i></span>
+  </a>
+
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="#about" class="nav__link">About</a>
+    <a href="#skills" class="nav__link">Skills</a>
+    <a href="#projects" class="nav__link">Work</a>
+    <a href="#experience" class="nav__link">Journey</a>
+    <a href="#services" class="nav__link">Services</a>
+    <a href="#contact" class="nav__link">Contact</a>
+  </nav>
+
+  <div class="nav__right">
+    <span class="nav__time" id="navTime" aria-label="Current time">--:--</span>
+    <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <!-- Animated background layers -->
+  <div class="hero__bg" aria-hidden="true">
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+    <div class="beam beam--1"></div>
+    <div class="beam beam--2"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__tag reveal">
+      <span class="dot"></span> Available for freelance & collaborations
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line reveal-line"><span>MOHAMMAD</span></span>
+      <span class="line reveal-line"><span>RAYHAN<em>.</em></span></span>
+    </h1>
+
+    <p class="hero__sub reveal">
+      Frontend Web Developer · UI Designer · Creative Developer.
+      I craft luxurious, high-performance digital experiences from
+      <strong>Bangladesh</strong> — engineered to feel effortless.
+    </p>
+
+    <div class="hero__cta reveal">
+      <a href="#projects" class="btn btn--primary magnetic">View Projects
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#about" class="btn btn--ghost magnetic">About Me</a>
+      <a href="#" class="btn btn--ghost magnetic" id="downloadCV">Download CV</a>
+    </div>
+
+    <div class="hero__social reveal" aria-label="Social links">
+      <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14M8.34 17.34v-6.67H6.12v6.67h2.22M7.23 9.7a1.29 1.29 0 1 0 0-2.58 1.29 1.29 0 0 0 0 2.58M18 17.34v-3.66c0-1.95-.42-3.45-2.7-3.45-1.09 0-1.83.6-2.13 1.17h-.03v-.99h-2.13v6.93h2.22v-3.43c0-.9.17-1.78 1.29-1.78 1.1 0 1.11 1.03 1.11 1.84v3.37H18"/></svg>
+      </a>
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+      </a>
+      <a href="mailto:hello@mohammadrayhan.dev" aria-label="Email" class="social">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 6h18v12H3zM3 7l9 6 9-6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="Scroll down">
+    <span>Scroll</span>
+    <span class="hero__scroll-line"></span>
+  </a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="section__head reveal">
+    <span class="eyebrow">01 — About</span>
+    <h2 class="section__title">Who I am</h2>
+  </div>
+
+  <div class="about__grid">
+    <!-- Portrait card (CSS/SVG avatar) -->
+    <div class="about__card glass reveal">
+      <div class="about__avatar" aria-label="Portrait of Mohammad Rayhan">
+        <svg viewBox="0 0 300 380" class="avatar-svg" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="av-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#16161a"/><stop offset="1" stop-color="#0a0a0c"/>
+            </linearGradient>
+            <linearGradient id="av-rim" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff6a1a"/><stop offset="1" stop-color="#ff9a4d"/>
+            </linearGradient>
+            <radialGradient id="av-skin" cx="0.5" cy="0.4" r="0.7">
+              <stop offset="0" stop-color="#3a3238"/><stop offset="1" stop-color="#211d22"/>
+            </radialGradient>
+          </defs>
+          <rect width="300" height="380" fill="url(#av-bg)"/>
+          <ellipse cx="150" cy="150" rx="70" ry="82" fill="url(#av-skin)"/>
+          <path d="M80 150 q0-70 70-72 q70 2 70 72 q0-40-30-58 q-40-22-80 0 q-30 18-30 58z" fill="#141117"/>
+          <path d="M95 300 q0-55 55-58 q55 3 55 58 v80 h-110z" fill="#191519"/>
+          <path d="M150 68 a82 82 0 0 1 82 82" fill="none" stroke="url(#av-rim)" stroke-width="3" opacity="0.8"/>
+          <circle cx="150" cy="150" r="112" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="about__badge glass-soft">
+        <span class="about__badge-dot"></span> Frontend · UI · Creative
+      </div>
+    </div>
+
+    <!-- Story -->
+    <div class="about__content">
+      <p class="about__lead reveal">
+        I'm <strong>Mohammad Rayhan</strong>, a frontend & creative developer
+        obsessed with the small details that make interfaces feel alive,
+        premium and effortless.
+      </p>
+      <p class="about__text reveal">
+        My journey started with curiosity — a blank HTML file and a dream.
+        Today I design and engineer <strong>fast, accessible, pixel-perfect</strong>
+        web experiences that blend clean architecture with cinematic motion.
+        I believe great products live in the intersection of design and code.
+      </p>
+
+      <div class="about__meta reveal">
+        <div class="about__meta-item glass-soft">
+          <span class="k">Education</span>
+          <span class="v">Computer Science · Self-taught Craft</span>
+        </div>
+        <div class="about__meta-item glass-soft">
+          <span class="k">Goal</span>
+          <span class="v">Build world-class digital experiences</span>
+        </div>
+        <div class="about__meta-item glass-soft">
+          <span class="k">Location</span>
+          <span class="v">Bangladesh · Working Worldwide</span>
+        </div>
+      </div>
+
+      <!-- Counters -->
+      <div class="counters reveal">
+        <div class="counter">
+          <span class="counter__num" data-target="3" data-suffix="+">0</span>
+          <span class="counter__label">Years Learning</span>
+        </div>
+        <div class="counter">
+          <span class="counter__num" data-target="48" data-suffix="+">0</span>
+          <span class="counter__label">Projects Completed</span>
+        </div>
+        <div class="counter">
+          <span class="counter__num" data-target="15" data-suffix="+">0</span>
+          <span class="counter__label">Technologies</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section skills" id="skills">
+  <div class="section__head reveal">
+    <span class="eyebrow">02 — Skills</span>
+    <h2 class="section__title">My toolkit</h2>
+    <p class="section__desc">Tools I use to design, build and ship premium products.</p>
+  </div>
+
+  <div class="skills__grid" id="skillsGrid">
+    <!-- cards injected via JS but SSR-friendly fallback below -->
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section projects" id="projects">
+  <div class="section__head reveal">
+    <span class="eyebrow">03 — Featured Work</span>
+    <h2 class="section__title">Selected projects</h2>
+  </div>
+
+  <div class="projects__grid" id="projectsGrid"></div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section experience" id="experience">
+  <div class="section__head reveal">
+    <span class="eyebrow">04 — Journey</span>
+    <h2 class="section__title">Experience timeline</h2>
+  </div>
+
+  <div class="timeline" id="timeline">
+    <span class="timeline__line" id="timelineLine"></span>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section services" id="services">
+  <div class="section__head reveal">
+    <span class="eyebrow">05 — Services</span>
+    <h2 class="section__title">What I do</h2>
+  </div>
+  <div class="services__grid" id="servicesGrid"></div>
+</section>
+
+<!-- ================= WHY CHOOSE ME ================= -->
+<section class="section why" id="why">
+  <div class="section__head reveal">
+    <span class="eyebrow">06 — Why me</span>
+    <h2 class="section__title">Why choose me</h2>
+  </div>
+  <div class="why__grid" id="whyGrid"></div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section testimonials" id="testimonials">
+  <div class="section__head reveal">
+    <span class="eyebrow">07 — Words</span>
+    <h2 class="section__title">Kind words</h2>
+  </div>
+  <div class="testi" id="testi">
+    <div class="testi__track" id="testiTrack"></div>
+    <div class="testi__dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact" id="contact">
+  <div class="section__head reveal">
+    <span class="eyebrow">08 — Contact</span>
+    <h2 class="section__title">Let's build together</h2>
+  </div>
+
+  <div class="contact__grid">
+    <form class="contact__form glass reveal" id="contactForm" novalidate>
+      <div class="field">
+        <input type="text" id="cName" name="name" required placeholder=" " />
+        <label for="cName">Your Name</label>
+      </div>
+      <div class="field">
+        <input type="email" id="cEmail" name="email" required placeholder=" " />
+        <label for="cEmail">Email Address</label>
+      </div>
+      <div class="field">
+        <input type="text" id="cSubject" name="subject" required placeholder=" " />
+        <label for="cSubject">Subject</label>
+      </div>
+      <div class="field">
+        <textarea id="cMsg" name="message" rows="4" required placeholder=" "></textarea>
+        <label for="cMsg">Message</label>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full magnetic" id="submitBtn">
+        <span>Send Message</span>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 12l16-8-6 8 6 8z" fill="currentColor"/></svg>
+      </button>
+      <p class="contact__status" id="formStatus" role="status"></p>
+    </form>
+
+    <div class="contact__side reveal">
+      <div class="contact__map glass" aria-label="Location map placeholder">
+        <div class="map-grid"></div>
+        <span class="map-pin"><span></span></span>
+        <span class="map-label">Bangladesh</span>
+      </div>
+      <div class="contact__links">
+        <a href="mailto:hello@mohammadrayhan.dev" class="contact__link glass-soft">
+          <span>Email</span><b>hello@mohammadrayhan.dev</b>
+        </a>
+        <div class="contact__socials">
+          <a href="https://github.com" target="_blank" rel="noopener" class="social" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 22 12 10 10 0 0 0 12 2z"/></svg></a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14M8.34 17.34v-6.67H6.12v6.67h2.22M7.23 9.7a1.29 1.29 0 1 0 0-2.58 1.29 1.29 0 0 0 0 2.58M18 17.34v-3.66c0-1.95-.42-3.45-2.7-3.45-1.09 0-1.83.6-2.13 1.17h-.03v-.99h-2.13v6.93h2.22v-3.43c0-.9.17-1.78 1.29-1.78 1.1 0 1.11 1.03 1.11 1.84v3.37H18"/></svg></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="social" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__inner">
+    <a href="#hero" class="footer__logo">Rayhan<i>.</i></a>
+    <p class="footer__copy">© <span id="year"></span> Mohammad Rayhan. Crafted with precision.</p>
+    <p class="footer__made">Made by <strong>Mohammad Rayhan</strong> · Bangladesh 🇧🇩</p>
+  </div>
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
